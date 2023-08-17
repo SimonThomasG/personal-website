@@ -39,18 +39,6 @@ html {
   float: right;
 }
 
-/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
-@media screen and (max-width: 500px) {
-  .header a {
-    float: none;
-    display: block;
-    text-align: center;
-  }
-  .header-right {
-    float: none;
-  }
-}
-
 .title-line-one {
   font-family: "Josefin Sans", sans-serif;
   font-family: "Josefin Slab", serif;
@@ -78,7 +66,6 @@ html {
   height: 70wv;
 }
 body {
-  min-width: 360px;
   margin: 0;
   background-image: url("./assets/portrait.jpg");
   background-position: center;
@@ -88,7 +75,7 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
-.featuresFlex{
+.featuresFlex {
   display: flex;
   justify-content: center;
 }
@@ -129,7 +116,7 @@ body {
   padding-right: 20px;
 }
 
-.carousel-container{
+.carousel-container {
   display: flex;
   justify-content: center;
 }
@@ -157,7 +144,7 @@ body {
   color: whitesmoke;
 }
 
-.about-flex{
+.about-flex {
   display: flex;
   justify-content: center;
 }
@@ -217,6 +204,20 @@ li {
 .copyright2 {
   display: none;
 }
+.skills2{
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+  .header-right {
+    float: none;
+  }
+}
 
 @media (max-width: 1100px) {
   .carousel {
@@ -224,7 +225,7 @@ li {
     justify-content: center;
     align-items: center;
   }
-  .carousel-container{
+  .carousel-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -236,6 +237,7 @@ li {
     overflow: hidden;
     background-color: #515914;
     position: relative;
+    width: 100vw;
   }
   .about {
     display: grid;
@@ -262,7 +264,6 @@ li {
   }
 }
 
-
 @media (max-width: 820px) {
   #findMe {
     display: none;
@@ -275,11 +276,11 @@ li {
     justify-content: center;
   }
   .contact {
-    width: 100vh;
+    width: 100vw;
     display: grid;
     background-color: #515914;
     opacity: 0.9;
-    grid-template-columns: 400px;
+    
     grid-template-rows: 5em 3em 3em 280px 2em;
     grid-auto-flow: column;
     font-size: large;
@@ -293,7 +294,7 @@ li {
   }
   .maps {
     grid-template-rows: span 2;
-    padding-left: 1em;
+    padding-left: 3em;
     width: 70vw;
     height: 250px;
   }
@@ -303,14 +304,15 @@ li {
     text-align: right;
     font-size: small;
   }
-   .title-line-one {
+
+  .title-line-one {
     letter-spacing: 1rem;
     text-align: left;
     font-size: 3rem;
     padding-left: 1rem;
     margin-left: 1rem;
   }
-  
+
   .title-line-two {
     font-size: 1.5rem;
     color: azure;
@@ -318,4 +320,15 @@ li {
     padding-top: 2vh;
     padding-left: 1rem;
   }
+
+  .features {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+  }
+  .skills{
+    display: none;
+  }
+
 }
+

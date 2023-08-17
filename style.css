@@ -303,4 +303,19 @@ li {
     text-align: right;
     font-size: small;
   }
+   .title-line-one {
+    letter-spacing: 1rem;
+    text-align: left;
+    font-size: 3rem;
+    padding-left: 1rem;
+    margin-left: 1rem;
+  }
+  
+  .title-line-two {
+    font-size: 1.5rem;
+    color: azure;
+    margin-left: 1rem;
+    padding-top: 2vh;
+    padding-left: 1rem;
+  }
 }
